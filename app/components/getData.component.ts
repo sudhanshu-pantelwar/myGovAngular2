@@ -18,7 +18,7 @@ export class GetDataComponent  {
     this.items = this.govtService.getData()
     .subscribe(response => {
         console.log(response);
-        this.myItems = JSON.stringify(response);
+        this.myItems = response;
     });
     // .subscribe(
     //   data => {console.log(data);
